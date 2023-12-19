@@ -1,9 +1,14 @@
 {
   "root": true,
-  "ignorePatterns": ["projects/**/*"],
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
   "overrides": [
     {
-      "files": ["*.ts", "*.html"],
+      "files": [
+        "*.ts",
+        "*.html"
+      ],
       "parser": "@angular-eslint/template-parser",
       "extends": [
         "eslint:recommended",
@@ -34,5 +39,8 @@
         ]
       }
     }
+  ],
+  "extends": [
+    "plugin:storybook/recommended"
   ]
 }

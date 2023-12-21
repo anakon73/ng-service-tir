@@ -18,12 +18,11 @@ import { ButtonSize, ButtonVariant } from './types'
       }"
       (click)="onClick.emit()"
     >
-      {{ label }}
+      <ng-content></ng-content>
     </button>
   `,
 })
 export class NButton {
-  @Input({ required: true }) label: string
   @Input() size: ButtonSize = 'md'
   @Input() variant: ButtonVariant = 'primary'
 

@@ -6,7 +6,7 @@ import { NButton } from '.'
 type NButtonWithContent = NButton & { content: string }
 
 const meta: Meta<NButtonWithContent> = {
-  title: 'NButton',
+  title: 'shared/ui/NButton',
   component: NButton,
   argTypes: {
     size: {

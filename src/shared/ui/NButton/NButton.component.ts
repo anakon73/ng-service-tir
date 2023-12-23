@@ -14,7 +14,9 @@ import { ButtonSize, ButtonVariant } from './types'
         'bg-blue-600 text-white  hover:bg-blue-700 hover:text-zinc-100':
           variant === 'primary',
         'bg-gray-100 text-gray-900 hover:bg-gray-200 hover:text-gray-950':
-          variant === 'light'
+          variant === 'light',
+        'bg-white text-gray-900 hover:bg-zinc-100 hover:text-gray-950':
+          variant === 'white'
       }"
       (click)="onClick.emit()"
     >

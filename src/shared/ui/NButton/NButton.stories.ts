@@ -56,3 +56,54 @@ export const Light: StoryObj<NButtonWithContent> = {
     `,
   }),
 }
+export const White: StoryObj<NButtonWithContent> = {
+  args: {
+    size: 'md',
+    variant: 'white',
+    content: 'Button',
+  },
+  render: (args: NButtonWithContent) => ({
+    template: `
+    <NButton
+      variant="${args.variant}"
+      size="${args.size}"
+    >
+      ${args.content}
+    </NButton>
+    `,
+  }),
+}
+export const Link: StoryObj<NButtonWithContent> = {
+  args: {
+    size: 'md',
+    variant: 'link',
+    content: '<div>Button</div> <div>Arrow</div>',
+  },
+  render: (args: NButtonWithContent) => ({
+    template: `
+    <NButton
+      variant="${args.variant}"
+      size="${args.size}"
+    >
+      ${args.content}
+    </NButton>
+    `,
+  }),
+}
+export const LinkWhite: StoryObj<NButtonWithContent> = {
+  args: {
+    size: 'md',
+    variant: 'link-white',
+    content: '<div>Button</div> <div>Arrow</div>',
+  },
+  render: (args: NButtonWithContent) => ({
+    template: `
+    <NButton
+      variant="${args.variant}"
+      size="${args.size}"
+    >
+      ${args.content}
+    </NButton>
+    `,
+  }),
+}

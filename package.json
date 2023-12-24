@@ -10,7 +10,7 @@
     "lint": "eslint ./src",
     "lint:debug": "eslint ./src --debug",
     "lint:fix": "eslint ./src --fix",
-    "storybook": "ng run ng-service-tir:storybook",
+    "storybook": "ng run ng-service-tir:storybook --ci",
     "build-storybook": "ng run ng-service-tir:build-storybook"
   },
   "private": true,

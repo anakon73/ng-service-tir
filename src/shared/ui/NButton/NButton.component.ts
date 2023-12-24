@@ -7,16 +7,18 @@ import { ButtonSize, ButtonVariant } from './types'
   template: `
     <button
       [ngClass]="{
-        'font-montserrat font-bold rounded-[30px] ': true,
+        'font-montserrat font-bold rounded-[30px] flex items-center gap-1': true,
         'transition-colors duration-300': true,
         'px-7 py-4 text-sm': size === 'lg',
         'px-9 py-3 text-xs': size === 'md',
-        'bg-blue-600 text-white  hover:bg-blue-700 hover:text-zinc-100':
+        'bg-blue-600 text-white/100 hover:bg-blue-700 hover:text-zinc-100/100':
           variant === 'primary',
         'bg-gray-100 text-gray-900 hover:bg-gray-200 hover:text-gray-950':
           variant === 'light',
         'bg-white text-gray-900 hover:bg-zinc-100 hover:text-gray-950':
-          variant === 'white'
+          variant === 'white',
+        'text-white hover:text-zinc-100': variant === 'link-white',
+        'text-blue-600 hover:text-blue-800': variant === 'link'
       }"
       (click)="onClick.emit()"
     >

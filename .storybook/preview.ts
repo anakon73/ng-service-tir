@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/angular'
+import './styles.css'
 
 const preview: Preview = {
   parameters: {

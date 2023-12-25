@@ -1,4 +1,4 @@
-import { Meta, StoryObj, argsToTemplate } from '@storybook/angular'
+import { Meta, StoryObj } from '@storybook/angular'
 
 import { NInput } from '.'
 
@@ -6,13 +6,10 @@ const meta: Meta<NInput> = {
   title: 'shared/ui/NInput',
   component: NInput,
   render: (args: NInput) => ({
-    props: {
-      ...args,
-    },
     template: `
       <div style="max-width: 360px">
         <NInput
-          ${argsToTemplate(args)}
+          label="${args.label}"
         />
       </div>
     `,

@@ -1,17 +1,17 @@
-import { Meta, StoryObj, argsToTemplate } from '@storybook/angular'
+import { Meta, StoryObj } from '@storybook/angular'
+import { ɵresolveComponentResources } from '@angular/core'
 
 import { NTextarea } from '.'
 
 const meta: Meta<NTextarea> = {
   title: 'shared/UI/NTextarea',
   component: NTextarea,
+  decorators: [],
   render: (args: NTextarea) => ({
-    props: {
-      ...args,
-    },
     template: `
         <NTextarea
-          ${argsToTemplate(args)}
+          size="${args.size}"
+          placeholder="${args.placeholder}"
         />
     `,
   }),
@@ -21,6 +21,7 @@ export default meta
 
 export const Small: StoryObj<NTextarea> = {
   args: {
+    placeholder: 'write text',
     size: 'sm',
   },
 }

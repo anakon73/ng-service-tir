@@ -11,7 +11,8 @@
     "lint:debug": "eslint ./src --debug",
     "lint:fix": "eslint ./src --fix",
     "storybook": "ng run ng-service-tir:storybook --ci",
-    "build-storybook": "ng run ng-service-tir:build-storybook"
+    "build-storybook": "ng run ng-service-tir:build-storybook",
+    "tailwind": "npx tailwind -i ./src/styles.css -o ./.storybook/styles.css --watch"
   },
   "private": true,
   "dependencies": {
@@ -44,6 +45,7 @@
     "@storybook/addon-links": "^7.6.6",
     "@storybook/angular": "^7.6.6",
     "@storybook/blocks": "^7.6.6",
+    "@storybook/builder-vite": "^7.6.6",
     "@storybook/test": "^7.6.6",
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "^6.13.1",

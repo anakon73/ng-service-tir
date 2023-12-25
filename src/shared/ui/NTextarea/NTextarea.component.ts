@@ -6,9 +6,8 @@ import { AreaSize } from './types'
   selector: 'NTextarea',
   template: `
     <textarea
+      class="w-full resize-none overflow-hidden border border-slate-300 bg-white p-4 text-sm font-medium leading-small text-slate-700 placeholder:font-normal placeholder:text-gray-900/50"
       [ngClass]="{
-        'p-4 border bg-white text-sm border-slate-300 leading-small resize-none overflow-hidden': true,
-        'placeholder:text-gray-900/50 placeholder:font-normal font-medium text-slate-700 w-full mt-20': true,
         'rounded-lg h-36 max-w-[370px]': size === 'sm',
         'rounded-md h-32': size === 'lg'
       }"

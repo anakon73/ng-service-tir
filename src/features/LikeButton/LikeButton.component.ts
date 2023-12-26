@@ -32,6 +32,5 @@ export class LikeButton {
 
   onClick() {
     this.onLike.emit(this.isLiked ? false : true)
-    console.log(123)
   }
 }

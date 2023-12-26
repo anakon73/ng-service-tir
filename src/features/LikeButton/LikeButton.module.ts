@@ -8,10 +8,7 @@ import { LikeButton } from './LikeButton.component'
 
 @NgModule({
   declarations: [LikeButton],
-  imports: [
-    BrowserModule,
-    NgIconsModule.withIcons({ heroHeart, heroHeartSolid }),
-  ],
+  imports: [NgIconsModule.withIcons({ heroHeart, heroHeartSolid })],
   exports: [LikeButton],
 })
 export class LikeButtonModule {}

@@ -5,21 +5,17 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
   template: `
     <button (click)="onClick()">
       <div
-        *ngIf="isLiked"
-        class="text-white bg-blue-600 !w-6 !h-6 p-0.5 rounded-full"
+        class="!w-6 !h-6 p-0.5 rounded-full transition-colors duration-300"
+        [ngClass]="{
+          'text-white bg-blue-600 hover:text-zinc-100 hover:bg-blue-700':
+            isLiked,
+          'text-blue-600 bg-white hover:text-blue-700 hover:bg-zinc-100':
+            !isLiked
+        }"
       >
         <ng-icon
           class="!w-4 !h-4"
-          name="heroHeartSolid"
-        ></ng-icon>
-      </div>
-      <div
-        *ngIf="!isLiked"
-        class="text-blue-600 bg-white !w-6 !h-6 p-0.5 rounded-full"
-      >
-        <ng-icon
-          class="!w-4 !h-4"
-          name="heroHeart"
+          [name]="isLiked ? 'heroHeartSolid' : 'heroHeart'"
         ></ng-icon>
       </div>
     </button>

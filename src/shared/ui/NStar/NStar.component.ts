@@ -16,6 +16,6 @@ import { Component, Input } from '@angular/core'
     name="heroStarSolid"
   ></ng-icon>`,
 })
-export class Star {
+export class NStar {
   @Input() active: boolean = false
 }

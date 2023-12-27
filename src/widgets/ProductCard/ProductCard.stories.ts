@@ -3,8 +3,9 @@ import { moduleMetadata } from '@storybook/angular/dist/client/decorators'
 import { argsToTemplate } from '@storybook/angular/dist/client/argsToTemplate'
 import { CommonModule } from '@angular/common'
 
-import { LikeButtonModule } from '../../features/LikeButton/LikeButton.module'
-import { RatingModule } from '../../features/Rating/Rating.module'
+import { ProductFeaturesModule } from '../../features/Product/ProductFeatures.module'
+
+import { ProductEntitiesModule } from '../../entities/Product/ProductEntities.module'
 
 import { UILib } from '../../shared/ui/UILib.module'
 import { IProduct } from '../../shared/types'
@@ -35,7 +36,12 @@ const meta: Meta<ProductCard> = {
   component: ProductCard,
   decorators: [
     moduleMetadata({
-      imports: [LikeButtonModule, CommonModule, RatingModule, UILib],
+      imports: [
+        ProductEntitiesModule,
+        CommonModule,
+        ProductFeaturesModule,
+        UILib,
+      ],
     }),
   ],
   render: (args) => ({

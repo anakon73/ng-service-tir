@@ -2,12 +2,12 @@ import { Meta, StoryObj } from '@storybook/angular'
 import { moduleMetadata } from '@storybook/angular/dist/client/decorators'
 import { CommonModule } from '@angular/common'
 
-import { UILib } from '../../shared/ui/UILib.module'
+import { UILib } from '../../../shared/ui/UILib.module'
 
 import { Rating } from './Rating.component'
 
 const meta: Meta<Rating> = {
-  title: 'features/Rating',
+  title: 'entities/Product/Rating',
   component: Rating,
   decorators: [
     moduleMetadata({

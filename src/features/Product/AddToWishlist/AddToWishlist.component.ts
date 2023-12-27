@@ -21,7 +21,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
     </button>
   `,
 })
-export class LikeButton {
+export class AddToWishlist {
   @Input({ required: true }) isLiked: boolean
 
   @Output() onLike = new EventEmitter<boolean>()

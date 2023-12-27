@@ -4,11 +4,11 @@ import { NgIconsModule } from '@ng-icons/core'
 import { heroHeart } from '@ng-icons/heroicons/outline'
 import { heroHeartSolid } from '@ng-icons/heroicons/solid'
 
-import { LikeButton } from './LikeButton.component'
+import { AddToWishlist } from './AddToWishlist.component'
 
-const meta: Meta<LikeButton> = {
-  title: 'features/LikeButton',
-  component: LikeButton,
+const meta: Meta<AddToWishlist> = {
+  title: 'features/Product/AddToWishlist',
+  component: AddToWishlist,
   decorators: [
     moduleMetadata({
       imports: [NgIconsModule.withIcons({ heroHeart, heroHeartSolid })],
@@ -19,9 +19,9 @@ const meta: Meta<LikeButton> = {
 
 export default meta
 
-export const Default: StoryObj<LikeButton> = {}
+export const Default: StoryObj<AddToWishlist> = {}
 
-export const Liked: StoryObj<LikeButton> = {
+export const Liked: StoryObj<AddToWishlist> = {
   args: {
     isLiked: true,
   },

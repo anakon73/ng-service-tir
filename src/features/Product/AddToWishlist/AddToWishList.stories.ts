@@ -4,7 +4,7 @@ import { NgIconsModule } from '@ng-icons/core'
 import { heroHeart } from '@ng-icons/heroicons/outline'
 import { heroHeartSolid } from '@ng-icons/heroicons/solid'
 
-import { AddToWishlist } from './AddToWishlist.component'
+import { AddToWishlist } from '.'
 
 const meta: Meta<AddToWishlist> = {
   title: 'features/Product/AddToWishlist',

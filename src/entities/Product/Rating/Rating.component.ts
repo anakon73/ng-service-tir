@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
 
-import { IRating } from '../../../shared/types'
+import { IRating } from '@/shared/types'
 
 @Component({
   selector: 'Rating',

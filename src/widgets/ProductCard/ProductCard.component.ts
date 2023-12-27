@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
 
-import { IProduct } from '../../shared/types'
+import { IProduct } from '@/shared/types'
 
 @Component({
   selector: 'ProductCard',

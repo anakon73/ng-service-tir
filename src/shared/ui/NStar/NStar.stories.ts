@@ -4,7 +4,7 @@ import { NgIconsModule } from '@ng-icons/core'
 import { heroStarSolid } from '@ng-icons/heroicons/solid'
 import { CommonModule } from '@angular/common'
 
-import { NStar } from './NStar.component'
+import { NStar } from '.'
 
 const meta: Meta<NStar> = {
   title: 'shared/UI/NStar',

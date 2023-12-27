@@ -33,7 +33,7 @@ const product: IProduct = {
 }
 
 const meta: Meta<ProductCard> = {
-  title: 'widgerts/ProductCard',
+  title: 'widgets/ProductCard',
   component: ProductCard,
   decorators: [
     moduleMetadata({

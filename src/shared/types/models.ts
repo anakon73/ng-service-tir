@@ -18,3 +18,9 @@ export type IService = {
   description: string
   image: string
 }
+
+export type IAdvantage = {
+  name: string
+  description: string
+  image: string
+}

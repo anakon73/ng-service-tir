@@ -12,3 +12,9 @@ export type IProduct = {
   price: number
   priceWithDiscount?: number
 }
+
+export type IService = {
+  name: string
+  description: string
+  image: string
+}

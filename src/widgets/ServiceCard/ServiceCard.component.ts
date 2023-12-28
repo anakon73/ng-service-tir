@@ -20,17 +20,12 @@ import { IService } from '@/shared/types'
         <p class="text-xs leading-5 text-neutral-500 opacity-70">
           {{ service.description }}
         </p>
-        <a
-          href="/service/"
-          class="mt-auto"
+        <NButton
+          size="md"
+          variant="primary"
         >
-          <NButton
-            size="md"
-            variant="primary"
-          >
-            Детальніше
-          </NButton>
-        </a>
+          Детальніше
+        </NButton>
       </div>
     </div>
   `,

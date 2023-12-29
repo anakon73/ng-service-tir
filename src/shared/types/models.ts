@@ -31,3 +31,10 @@ export type IArticle = {
   description: string
   image: string
 }
+
+export type IReview = {
+  author: string
+  productName: string
+  rate: IRating
+  comment: string
+}

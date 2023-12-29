@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
 @Component({
   selector: 'NInput',
   template: ` <div
-    class="flex flex-col justify-start gap-1 font-montserrat text-sm font-semibold leading-small"
+    class="flex flex-col justify-start gap-1 text-sm font-semibold leading-small"
   >
     <label
       class="block"

@@ -6,7 +6,7 @@ import { ButtonSize, ButtonVariant } from './types'
   selector: 'NButton',
   template: `
     <button
-      class="flex items-center gap-1 rounded-large font-montserrat font-bold transition-colors duration-300"
+      class="flex items-center gap-1 rounded-large font-bold transition-colors duration-300"
       [ngClass]="{
         'px-7 py-4 text-sm': size === 'lg',
         'px-9 py-3 text-xs': size === 'md',

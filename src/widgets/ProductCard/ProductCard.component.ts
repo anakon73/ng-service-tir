@@ -5,7 +5,7 @@ import { IProduct } from '@/shared/types'
 @Component({
   selector: 'ProductCard',
   template: `<div
-    class="card relative h-full inline-flex flex-col justify-between rounded-2xl px-3 pb-6 pt-3 text-gray-900 lg:max-w-none font-montserrat"
+    class="card relative h-full inline-flex flex-col justify-between rounded-2xl px-3 pb-6 pt-3 text-gray-900 lg:max-w-none"
   >
     <div>
       <div

@@ -26,7 +26,7 @@ import { IRating } from '@/shared/types'
 
       <p
         *ngIf="withQuantity"
-        class="whitespace-nowrap text-[10px] lg:text-xs font-montserrat"
+        class="whitespace-nowrap text-[10px] lg:text-xs"
       >
         <span class="font-medium leading-5 text-blue-600">{{
           rating.rate

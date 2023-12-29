@@ -24,7 +24,10 @@ import { IRating } from '@/shared/types'
         [active]="rating.rate >= 4.5"
       />
 
-      <p class="whitespace-nowrap text-[10px] lg:text-xs font-montserrat">
+      <p
+        *ngIf="withQuantity"
+        class="whitespace-nowrap text-[10px] lg:text-xs font-montserrat"
+      >
         <span class="font-medium leading-5 text-blue-600">{{
           rating.rate
         }}</span>
@@ -36,4 +39,5 @@ import { IRating } from '@/shared/types'
 })
 export class Rating {
   @Input({ required: true }) rating: IRating
+  @Input() withQuantity: boolean
 }

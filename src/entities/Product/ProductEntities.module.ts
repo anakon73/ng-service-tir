@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 
-import { UILib } from '@/shared/ui/UILib.module'
+import { UILib } from '@/shared/ui'
 
 import { Rating } from './Rating'
 

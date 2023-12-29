@@ -24,3 +24,10 @@ export type IAdvantage = {
   description: string
   image: string
 }
+
+export type IArticle = {
+  date: string
+  name: string
+  description: string
+  image: string
+}

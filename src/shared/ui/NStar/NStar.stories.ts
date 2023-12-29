@@ -1,8 +1,9 @@
 import { Meta, StoryObj } from '@storybook/angular'
-import { moduleMetadata } from '@storybook/angular/dist/client/decorators'
 import { NgIconsModule } from '@ng-icons/core'
 import { heroStarSolid } from '@ng-icons/heroicons/solid'
 import { CommonModule } from '@angular/common'
+
+import { moduleMetadata } from '@/shared/lib'
 
 import { NStar } from '.'
 

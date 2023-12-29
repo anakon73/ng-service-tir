@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/angular'
-import { argsToTemplate } from '@storybook/angular/dist/client/argsToTemplate'
 
 import { IAdvantage } from '@/shared/types'
+import { argsToTemplate } from '@/shared/lib'
 
 import { AdvantageCard } from '.'
 

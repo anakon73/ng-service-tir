@@ -1,6 +1,4 @@
 import { Meta, StoryObj } from '@storybook/angular'
-import { moduleMetadata } from '@storybook/angular/dist/client/decorators'
-import { argsToTemplate } from '@storybook/angular/dist/client/argsToTemplate'
 import { CommonModule } from '@angular/common'
 
 import { ProductFeaturesModule } from '@/features/Product/ProductFeatures.module'
@@ -9,6 +7,7 @@ import { ProductEntitiesModule } from '@/entities/Product/ProductEntities.module
 
 import { UILib } from '@/shared/ui/UILib.module'
 import { IProduct } from '@/shared/types'
+import { argsToTemplate, moduleMetadata } from '@/shared/lib'
 
 import disk from './assets/disk.png'
 import { ProductCard } from '.'

@@ -4,14 +4,18 @@ import { heroHeart } from '@ng-icons/heroicons/outline'
 import { heroHeartSolid } from '@ng-icons/heroicons/solid'
 import { CommonModule } from '@angular/common'
 
+import { ProductEntitiesModule } from '@/entities/Product'
+
 import { AddToWishlist } from './AddToWishlist'
+import { SearchResultCard } from './SearchResultCard'
 
 @NgModule({
-  declarations: [AddToWishlist],
+  declarations: [AddToWishlist, SearchResultCard],
   imports: [
     NgIconsModule.withIcons({ heroHeart, heroHeartSolid }),
     CommonModule,
+    ProductEntitiesModule,
   ],
-  exports: [AddToWishlist],
+  exports: [AddToWishlist, SearchResultCard],
 })
 export class ProductFeaturesModule {}

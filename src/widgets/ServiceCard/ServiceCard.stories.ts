@@ -27,11 +27,7 @@ const meta: Meta<ServiceCard> = {
   ],
   render: (args) => ({
     props: args,
-    template: `
-      <div class="font-montserrat">
-        <ServiceCard ${argsToTemplate(args)}></ServiceCard>
-      </div>
-    `,
+    template: `<ServiceCard ${argsToTemplate(args)}></ServiceCard>`,
   }),
 }
 

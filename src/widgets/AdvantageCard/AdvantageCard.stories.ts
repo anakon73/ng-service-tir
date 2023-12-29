@@ -20,11 +20,7 @@ const meta: Meta<AdvantageCard> = {
   component: AdvantageCard,
   render: (args) => ({
     props: args,
-    template: `
-      <div class="font-montserrat">
-        <AdvantageCard ${argsToTemplate(args)}></AdvantageCard>
-      </div>
-    `,
+    template: `<AdvantageCard ${argsToTemplate(args)}></AdvantageCard>`,
   }),
 }
 

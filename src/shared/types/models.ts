@@ -38,3 +38,11 @@ export type IReview = {
   rate: IRating
   comment: string
 }
+
+export type ISearchItem = {
+  name: string
+  image: string
+  rate: IRating
+  id: number
+  price: number
+}

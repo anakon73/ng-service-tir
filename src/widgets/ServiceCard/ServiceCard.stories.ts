@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/angular'
 import { CommonModule } from '@angular/common'
 
 import { IService } from '@/shared/types'
-import { UILib } from '@/shared/ui/UILib.module'
+import { UILib } from '@/shared/ui'
 import { argsToTemplate, moduleMetadata } from '@/shared/lib'
 
 import clean from './assets/clean.png'

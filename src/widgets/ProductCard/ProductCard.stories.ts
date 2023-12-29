@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from '@storybook/angular'
 import { CommonModule } from '@angular/common'
 
-import { ProductFeaturesModule } from '@/features/Product/ProductFeatures.module'
+import { ProductFeaturesModule } from '@/features/Product'
 
-import { ProductEntitiesModule } from '@/entities/Product/ProductEntities.module'
+import { ProductEntitiesModule } from '@/entities/Product'
 
-import { UILib } from '@/shared/ui/UILib.module'
+import { UILib } from '@/shared/ui'
 import { IProduct } from '@/shared/types'
 import { argsToTemplate, moduleMetadata } from '@/shared/lib'
 

@@ -1,9 +1,13 @@
 import { Component, Input } from '@angular/core'
 
+import { Rating } from '@/entities/Product/Rating'
+
 import { ISearchItem } from '@/shared/types'
 
 @Component({
   selector: 'SearchResultCard',
+  standalone: true,
+  imports: [Rating],
   template: ` <div
     class="flex items-center justify-between rounded-2xl bg-white px-4 py-3 max-w-[504px] w-full"
   >

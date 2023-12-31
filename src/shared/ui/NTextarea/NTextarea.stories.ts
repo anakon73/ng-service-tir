@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/angular'
-import { ɵresolveComponentResources } from '@angular/core'
 
 import { NTextarea } from '.'
 

@@ -1,15 +1,13 @@
 import { Meta, StoryObj } from '@storybook/angular'
 
-import { ProductEntitiesModule } from '@/entities/Product'
-
 import { ISearchItem } from '@/shared/types'
-import { moduleMetadata } from '@/shared/lib'
 
+import fuelTank from './assets/fuelTank.png'
 import { SearchResultCard } from '.'
 
 const item: ISearchItem = {
   id: 6422889,
-  image: '/src/assets/fuelTank.png',
+  image: fuelTank,
   name: 'Паливний бак Scania',
   price: 2200,
   rate: {
@@ -24,11 +22,6 @@ const meta: Meta<SearchResultCard> = {
   args: {
     item,
   },
-  decorators: [
-    moduleMetadata({
-      imports: [ProductEntitiesModule],
-    }),
-  ],
 }
 
 export default meta

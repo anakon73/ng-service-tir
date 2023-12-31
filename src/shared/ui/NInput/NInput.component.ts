@@ -1,7 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'NInput',
+  standalone: true,
+  imports: [FormsModule],
   template: ` <div
     class="flex flex-col justify-start gap-1 text-sm font-semibold leading-small"
   >

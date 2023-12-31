@@ -1,9 +1,15 @@
 import { Component, Input } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
 import { IProduct } from '@/shared/types'
+import { NButton } from '@/shared/ui/NButton'
+import { AddToWishlist } from '@/features/Product/AddToWishlist'
+import { Rating } from '@/entities/Product/Rating'
 
 @Component({
   selector: 'ProductCard',
+  standalone: true,
+  imports: [CommonModule, NButton, AddToWishlist, Rating],
   template: `<div
     class="card relative h-full inline-flex flex-col justify-between rounded-2xl px-3 pb-6 pt-3 text-gray-900 lg:max-w-none"
   >
@@ -12,7 +18,7 @@ import { IProduct } from '@/shared/types'
         class="relative mb-3 flex h-[130px] items-center justify-center rounded-2xl bg-indigo-100 lg:h-[188px] lg:max-w-none w-auto"
       >
         <button class="absolute right-2 top-2">
-          <LikeButton
+          <AddToWishlist
             [isLiked]="isLiked"
             (onLike)="isLiked = $event"
           />

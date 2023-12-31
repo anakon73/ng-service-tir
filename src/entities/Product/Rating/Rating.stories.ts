@@ -1,8 +1,4 @@
 import { Meta, StoryObj } from '@storybook/angular'
-import { CommonModule } from '@angular/common'
-
-import { UILib } from '@/shared/ui'
-import { moduleMetadata } from '@/shared/lib'
 
 import { Rating } from '.'
 
@@ -19,11 +15,6 @@ const meta: Meta<Rating> = {
       rate: 4.8,
     },
   },
-  decorators: [
-    moduleMetadata({
-      imports: [CommonModule, UILib],
-    }),
-  ],
 }
 
 export default meta

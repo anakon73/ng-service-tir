@@ -1,9 +1,13 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { FormsModule } from '@angular/forms'
 
 import { AreaSize } from './types'
 
 @Component({
   selector: 'NTextarea',
+  standalone: true,
+  imports: [FormsModule, CommonModule],
   template: `
     <textarea
       class="w-full resize-none overflow-hidden border border-slate-300 bg-white p-4 text-sm font-medium leading-small text-slate-700 placeholder:font-normal placeholder:text-gray-900/50"

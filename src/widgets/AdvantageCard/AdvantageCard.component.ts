@@ -4,6 +4,7 @@ import { IAdvantage } from '@/shared/types'
 
 @Component({
   selector: 'AdvantageCard',
+  standalone: true,
   template: `
     <div
       class="card inline-flex flex-col gap-3 rounded-2xl border border-gray-100 bg-white p-6 h-full"

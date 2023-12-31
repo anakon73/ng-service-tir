@@ -2,8 +2,7 @@ import { Meta, StoryObj } from '@storybook/angular'
 import { CommonModule } from '@angular/common'
 
 import { IService } from '@/shared/types'
-import { UILib } from '@/shared/ui'
-import { argsToTemplate, moduleMetadata } from '@/shared/lib'
+import { argsToTemplate } from '@/shared/lib'
 
 import clean from './assets/clean.png'
 import { ServiceCard } from '.'
@@ -20,11 +19,6 @@ const service: IService = {
 const meta: Meta<ServiceCard> = {
   title: 'widgets/ServiceCard',
   component: ServiceCard,
-  decorators: [
-    moduleMetadata({
-      imports: [CommonModule, UILib],
-    }),
-  ],
   render: (args) => ({
     props: args,
     template: `<ServiceCard ${argsToTemplate(args)}></ServiceCard>`,

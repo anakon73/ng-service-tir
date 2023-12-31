@@ -1,9 +1,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 import { ButtonSize, ButtonVariant } from './types'
+import { CommonModule } from '@angular/common'
 
 @Component({
   selector: 'NButton',
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <button
       class="flex items-center gap-1 rounded-large font-bold transition-colors duration-300"

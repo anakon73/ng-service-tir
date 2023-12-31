@@ -1,9 +1,7 @@
 import { Meta, StoryObj } from '@storybook/angular'
-import { NgIconsModule } from '@ng-icons/core'
-import { heroArrowUpRight } from '@ng-icons/heroicons/outline'
 
 import { IArticle } from '@/shared/types'
-import { argsToTemplate, moduleMetadata } from '@/shared/lib'
+import { argsToTemplate } from '@/shared/lib'
 
 import engine from './assets/engine.png'
 import { ArticleCard } from '.'
@@ -20,18 +18,9 @@ const article: IArticle = {
 const meta: Meta<ArticleCard> = {
   title: 'widgets/ArticleCard',
   component: ArticleCard,
-  decorators: [
-    moduleMetadata({
-      imports: [NgIconsModule.withIcons({ heroArrowUpRight })],
-    }),
-  ],
   render: (args) => ({
     props: args,
-    template: `
-      <div>
-        <ArticleCard ${argsToTemplate(args)}></ArticleCard>
-      </div>
-    `,
+    template: `<ArticleCard ${argsToTemplate(args)}></ArticleCard>`,
   }),
 }
 

@@ -1,7 +1,13 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
+import { NgIconComponent, provideIcons } from '@ng-icons/core'
+import { heroHeart } from '@ng-icons/heroicons/outline'
+import { heroHeartSolid } from '@ng-icons/heroicons/solid'
 
 @Component({
-  selector: 'LikeButton',
+  selector: 'AddToWishlist',
+  standalone: true,
+  imports: [NgIconComponent],
+  viewProviders: [provideIcons({ heroHeart, heroHeartSolid })],
   template: `
     <button (click)="onClick()">
       <div

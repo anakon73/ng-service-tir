@@ -1,9 +1,13 @@
 import { Component, Input } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
 import { IService } from '@/shared/types'
+import { NButton } from '@/shared/ui/NButton'
 
 @Component({
   selector: 'ServiceCard',
+  standalone: true,
+  imports: [CommonModule, NButton],
   template: `
     <div
       class="card flex flex-col rounded-2xl py-3 pl-3 pr-1.5 max-w-[560px] lg:flex-row gap-4 h-full"

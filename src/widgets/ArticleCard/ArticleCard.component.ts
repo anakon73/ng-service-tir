@@ -1,9 +1,14 @@
 import { Component, Input } from '@angular/core'
+import { NgIconComponent, provideIcons } from '@ng-icons/core'
+import { heroArrowUpRight } from '@ng-icons/heroicons/outline'
 
 import { IArticle } from '@/shared/types'
 
 @Component({
   selector: 'ArticleCard',
+  standalone: true,
+  imports: [NgIconComponent],
+  viewProviders: [provideIcons({ heroArrowUpRight })],
   template: `
     <div class="flex h-full w-full max-w-[367px] flex-col gap-3 md:gap-7">
       <img

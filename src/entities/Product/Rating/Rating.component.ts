@@ -1,9 +1,13 @@
 import { Component, Input } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
 import { IRating } from '@/shared/types'
+import { NStar } from '@/shared/ui/NStar'
 
 @Component({
   selector: 'Rating',
+  standalone: true,
+  imports: [CommonModule, NStar],
   template: `
     <div class="flex items-center">
       <Star [active]="rating.rate >= 0.5" />

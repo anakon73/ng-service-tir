@@ -1,9 +1,7 @@
 import { Meta, StoryObj } from '@storybook/angular'
 
-import { ProductEntitiesModule } from '@/entities/Product'
-
 import { IReview } from '@/shared/types'
-import { argsToTemplate, moduleMetadata } from '@/shared/lib'
+import { argsToTemplate } from '@/shared/lib'
 
 import { ReviewCard } from '.'
 
@@ -28,11 +26,6 @@ const review: IReview = {
 const meta: Meta<ReviewCard> = {
   title: 'widgets/ReviewCard',
   component: ReviewCard,
-  decorators: [
-    moduleMetadata({
-      imports: [ProductEntitiesModule],
-    }),
-  ],
   args: {
     review,
   },

@@ -1,13 +1,7 @@
 import { Meta, StoryObj } from '@storybook/angular'
-import { CommonModule } from '@angular/common'
 
-import { ProductFeaturesModule } from '@/features/Product'
-
-import { ProductEntitiesModule } from '@/entities/Product'
-
-import { UILib } from '@/shared/ui'
+import { argsToTemplate } from '@/shared/lib'
 import { IProduct } from '@/shared/types'
-import { argsToTemplate, moduleMetadata } from '@/shared/lib'
 
 import disk from './assets/disk.png'
 import { ProductCard } from '.'
@@ -33,16 +27,6 @@ const product: IProduct = {
 const meta: Meta<ProductCard> = {
   title: 'widgets/ProductCard',
   component: ProductCard,
-  decorators: [
-    moduleMetadata({
-      imports: [
-        ProductEntitiesModule,
-        CommonModule,
-        ProductFeaturesModule,
-        UILib,
-      ],
-    }),
-  ],
   render: (args) => ({
     props: args,
     template: `

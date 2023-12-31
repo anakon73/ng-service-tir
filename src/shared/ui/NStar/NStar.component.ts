@@ -1,7 +1,13 @@
+import { CommonModule } from '@angular/common'
 import { Component, Input } from '@angular/core'
+import { NgIconComponent, provideIcons } from '@ng-icons/core'
+import { heroStarSolid } from '@ng-icons/heroicons/solid'
 
 @Component({
   selector: 'Star',
+  standalone: true,
+  imports: [NgIconComponent, CommonModule],
+  viewProviders: [provideIcons({ heroStarSolid })],
   styles: `
   ng-icon {
     --ng-icon__size: 10px !important;

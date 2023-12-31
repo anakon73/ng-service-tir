@@ -1,7 +1,14 @@
 import { Component } from '@angular/core'
+import { NgIconComponent, provideIcons } from '@ng-icons/core'
+import { heroMap } from '@ng-icons/heroicons/outline'
+
+import { NButton } from '@/shared/ui/NButton'
 
 @Component({
   selector: 'ContactCard',
+  standalone: true,
+  imports: [NgIconComponent, NButton],
+  viewProviders: [provideIcons({ heroMap })],
   template: `
     <div
       class="contactCard py-8 pl-8 min-[425px]:pr-16 pr-8 rounded-2xl inline-block bg-white"

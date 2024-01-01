@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core'
 
-import { Rating } from '@/entities/Product/Rating'
+import { NRating } from '@/entities/product'
 
 import { ISearchItem } from '@/shared/types'
 
 @Component({
-  selector: 'SearchResultCard',
+  selector: 'NSearchResultCard',
   standalone: true,
-  imports: [Rating],
+  imports: [NRating],
   template: ` <div
     class="flex items-center justify-between rounded-2xl bg-white px-4 py-3 max-w-[504px] w-full"
   >
@@ -26,7 +26,7 @@ import { ISearchItem } from '@/shared/types'
         </h2>
         <div class="flex items-center gap-4">
           <p class="text-xs leading-5 text-neutral-500">Код: {{ item.id }}</p>
-          <Rating
+          <NRating
             [withQuantity]="true"
             [rating]="item.rate"
           />
@@ -38,6 +38,6 @@ import { ISearchItem } from '@/shared/types'
     </div>
   </div>`,
 })
-export class SearchResultCard {
+export class NSearchResultCard {
   @Input({ required: true }) item: ISearchItem
 }

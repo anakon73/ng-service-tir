@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core'
 
-import { Rating } from '@/entities/Product/Rating'
+import { NRating } from '@/entities/product'
 
 import { IReview } from '@/shared/types'
 
 @Component({
   selector: 'ReviewCard',
   standalone: true,
-  imports: [Rating],
+  imports: [NRating],
   template: `
     <div
       class="card flex flex-col gap-2 rounded-[10px] bg-white p-4 min-[425px]:min-w-[387px] lg:max-w-[560px] lg:gap-1 lg:p-6 h-full"
@@ -27,7 +27,7 @@ import { IReview } from '@/shared/types'
           >
             {{ review.productName }}
           </p>
-          <Rating
+          <NRating
             [rating]="review.rate"
             [withQuantity]="false"
           />

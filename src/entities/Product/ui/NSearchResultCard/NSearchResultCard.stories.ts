@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/angular'
 import { ISearchItem } from '@/shared/types'
 
 import fuelTank from './assets/fuelTank.png'
-import { SearchResultCard } from '.'
+import { NSearchResultCard } from '.'
 
 const item: ISearchItem = {
   id: 6422889,
@@ -16,9 +16,9 @@ const item: ISearchItem = {
   },
 }
 
-const meta: Meta<SearchResultCard> = {
-  title: 'entities/Product/SearchResultCard',
-  component: SearchResultCard,
+const meta: Meta<NSearchResultCard> = {
+  title: 'entities/Product/NSearchResultCard',
+  component: NSearchResultCard,
   args: {
     item,
   },
@@ -26,4 +26,4 @@ const meta: Meta<SearchResultCard> = {
 
 export default meta
 
-export const Default: StoryObj<SearchResultCard> = {}
+export const Default: StoryObj<NSearchResultCard> = {}

@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common'
 
 import { IProduct } from '@/shared/types'
 import { NButton } from '@/shared/ui/NButton'
-import { AddToWishlist } from '@/features/Product/AddToWishlist'
-import { Rating } from '@/entities/Product/Rating'
+import { AddToWishlist } from '@/features/product/add-to-wishlist'
+import { NRating } from '@/entities/product'
 
 @Component({
   selector: 'ProductCard',
   standalone: true,
-  imports: [CommonModule, NButton, AddToWishlist, Rating],
+  imports: [CommonModule, NButton, AddToWishlist, NRating],
   template: `<div
     class="card relative h-full inline-flex flex-col justify-between rounded-2xl px-3 pb-6 pt-3 text-gray-900 lg:max-w-none"
   >
@@ -33,7 +33,7 @@ import { Rating } from '@/entities/Product/Rating'
         {{ product.name }}
       </h1>
       <div class="mb-2 flex flex-wrap items-center">
-        <Rating [rating]="product.rate" />
+        <NRating [rating]="product.rate" />
       </div>
       <div
         class="mb-4 min-[400px]:max-w-[244px] text-[10px] leading-4 text-neutral-500 opacity-70 lg:text-xs lg:leading-5"

@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/angular'
 
-import { Rating } from '.'
+import { NRating } from '.'
 
-const meta: Meta<Rating> = {
-  title: 'entities/Product/Rating',
-  component: Rating,
+const meta: Meta<NRating> = {
+  title: 'entities/Product/NRating',
+  component: NRating,
   argTypes: {
     withQuantity: { type: 'boolean' },
   },
@@ -19,9 +19,9 @@ const meta: Meta<Rating> = {
 
 export default meta
 
-export const Default: StoryObj<Rating> = {}
+export const Default: StoryObj<NRating> = {}
 
-export const WithoutQuantity: StoryObj<Rating> = {
+export const WithoutQuantity: StoryObj<NRating> = {
   args: {
     withQuantity: false,
   },

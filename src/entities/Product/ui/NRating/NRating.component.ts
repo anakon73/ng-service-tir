@@ -5,7 +5,7 @@ import { IRating } from '@/shared/types'
 import { NStar } from '@/shared/ui/NStar'
 
 @Component({
-  selector: 'Rating',
+  selector: 'NRating',
   standalone: true,
   imports: [CommonModule, NStar],
   template: `
@@ -41,7 +41,7 @@ import { NStar } from '@/shared/ui/NStar'
     </div>
   `,
 })
-export class Rating {
+export class NRating {
   @Input({ required: true }) rating: IRating
   @Input() withQuantity: boolean
 }

@@ -16,6 +16,7 @@ import { ISearchItem } from '@/shared/types'
         class="flex items-center justify-center rounded-xl bg-indigo-100 w-20 h-16"
       >
         <img
+          class="rounded-xl"
           [src]="item.image"
           alt="result product image"
         />

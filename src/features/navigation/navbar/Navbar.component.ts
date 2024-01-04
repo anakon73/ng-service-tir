@@ -2,6 +2,7 @@ import { Component } from '@angular/core'
 
 @Component({
   selector: 'Navbar',
+  standalone: true,
   template: `
     <div class="hidden bg-gray-100 text-sm md:block">
       <ul

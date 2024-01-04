@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/angular'
 import { Footer } from '.'
 
 const meta: Meta<Footer> = {
-  title: 'features/Product/Footer',
+  title: 'features/Navigation/Footer',
   component: Footer,
 }
 

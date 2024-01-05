@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'Navbar',
+  selector: 'NNavbar',
   standalone: true,
   template: `
     <div class="hidden bg-gray-100 text-sm md:block">
@@ -46,4 +46,4 @@ import { Component } from '@angular/core'
     </div>
   `,
 })
-export class Navbar {}
+export class NNavbar {}

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'Footer',
+  selector: 'NFooter',
   standalone: true,
   template: ` <div class="bg-gray-100 py-6 relative z-40">
     <div
@@ -61,4 +61,4 @@ import { Component } from '@angular/core'
     </div>
   </div>`,
 })
-export class Footer {}
+export class NFooter {}
